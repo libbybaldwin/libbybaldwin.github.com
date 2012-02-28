@@ -10,17 +10,19 @@
         color: #03574d;
 	background-color: #d0e5dc;
       }
-      h1 { font-size: 2.3em; color: #d4ede2; margin-bottom: -20px; } 
-      h1 a { text-decoration: none; }
-      h2 a { text-decoration: none; color: #333; }
-      h2 a:hover { color: #f4f689; }
+      h1 { font-size: 2.3em; color: #d4ede2; margin-bottom: -20px; text-shadow: 0 0 3px #333; } 
+      h1 a { text-decoration: none; text-shadow: 0 0 3px #333; }
+      h1 a:hover { color: #d4ede2; }
+      h2 a { text-decoration: none; color: #333; text-shadow: 0 0 2px #f4f689;}
+      h2 a:hover { color: #f4f689; text-shadow: 0 0 2px #333;}
       h2 { font-size: 1.5em; color: #f4f689; clear: both;} 
-      h3 { text-align: center; color: #7dc4a7; }
+      h3 { text-align: center; font-size: 1.5em; color: #05463e; margin: 4px;}
+      h3 a { color: #f4f637; }
       a { color: #7dc4a7; }
       ul li { list-style-type: none;}
       #content {
         margin: 20px;
-        padding: 0px 400px 40px 40px;
+        padding: 0px 400px 20px 40px;
         border-radius: 7px;
 	border: 3px solid #526652;
       }
@@ -30,13 +32,17 @@
 	opacity:0.85;
       }
       
-      #lifestream {
+      #lifestream, #props {
         opacity:0.88;
         background: #777;
         border-radius: 7px;
         color: #d4d4d4;
         width: 450px;
         font-size:11px;
+      }
+      #props {
+         width: 540px; 
+         padding: 2px 2px;
       }
       #lifestream a {
         color: #f4f689; /* #f6dd97; */
@@ -63,7 +69,7 @@
     </style>
     <link href="css/lifestream.css" rel="stylesheet" type="text/css">
     <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://raw.github.com/christianv/jquery-lifestream/master/jquery.lifestream.min.js"></script>
     <script src="https://raw.github.com/rmm5t/jquery-timeago/master/jquery.timeago.js" type="text/javascript" charset="utf-8"></script>
     <script>
@@ -119,6 +125,9 @@
     <h2>Using <a href="https://github.com/christianv/jquery-lifestream">jQuery Lifestream</a></h2>
       <!-- <input id="filter" placeholder="filter..." /> -->
       <div id="lifestream"></div>
+      <div id="props"><h3>Made with Christan Veuring's 
+        <a href="https://github.com/christianv/jquery-lifestream">jQuery-LifeStream</a> and a 
+        <a href="http://pages.guthub.com">Github Page</a>.</h3></div>
     </div>
 
 
