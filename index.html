@@ -21,15 +21,15 @@
       a { color: #7dc4a7; }
       ul li { list-style-type: none;}
       #content {
-        width: 500px;
+        width: 600px;
         margin: 20px auto;
-        padding: 0px 150px 20px 20px;
+        padding: 0px 45px 20px 20px;
         border-radius: 7px;
 	border: 3px solid #526652;
       }
       div.background {
 	background-image: url(images/berlinmem.jpg);
-        background-repeat:no-repeat;
+        /*background-repeat:no-repeat;*/
         background-size: 100%;
 	opacity:0.75;
       }
@@ -39,7 +39,7 @@
         background: #777;
         border-radius: 7px;
         color: #eeeeee;
-        width: 450px;
+        width: 410px;
         font-size:11px;
       }
       #props {
@@ -104,7 +104,7 @@
 			+ ":" + pad(Math.abs(offset) % 60, 2);
 	};
 	$('#lifestream').lifestream({
-		limit: 22,
+		limit: 21,
 		list: list,
 		feedloaded: function(){
 			count++;
